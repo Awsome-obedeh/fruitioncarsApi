@@ -17,7 +17,7 @@ $color=$data["color"];
 
 // insert admin details
 // remember to hash the user password 
-$insert_sql="INSERT INTO admin cars title.description,image_url,price,category,brand_name,year,fuel_type,color
+$insert_sql="INSERT INTO admin cars title,description,image_url,price,category,brand_name,year,fuel_type,color
  VALUES('$title', '$description', '$image_url', '$price', '$category', '$brand_name', '$year',
  $fuel_type', '$color')";
 $insert_query=mysqli_query($conn,$insert_sql);

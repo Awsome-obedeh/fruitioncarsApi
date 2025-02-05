@@ -116,9 +116,41 @@
 
 
     <div class="endpoint">
+        <h2>Get all Category</h2>
+        <p><strong>Endpoint:</strong> <code>GET /api/getCategory</code></p>
+        <p><strong>Description:</strong> Fetches all category (e.g., sedan, SUV, truck).</p>
+        <p><strong>Example Request:</strong></p>
+        <pre>GET http://localhost/fruitionMotors/api/getCategory</pre>
+        <p><strong>Example Response:</strong></p>
+        <pre>
+        {
+  "status": 200,
+  "category": [
+    {
+      "name": "sedan"
+    },
+    {
+      "name": "suv"
+    },
+    {
+      "name": "truck"
+    },
+    {
+      "name": "convertible"
+    },
+    {
+      "name": "lorry"
+    }
+  ]
+}
+        </pre>
+    </div>
+
+
+    <div class="endpoint">
         <h2>Create Cars</h2>
         <p><strong>Endpoint:</strong> <code>POST /api/createCar</code></p>
-        <p><strong>Description:</strong> Creates a car and its details in the databse</p>
+        <p><strong>Description:</strong> Creates a car and its details in the database</p>
         <p><strong>Example Request:</strong></p>
         <pre>POST http://localhost/fruitionMotors/api/createCar</pre>
         <p><strong>Example Request:</strong></p>
@@ -142,6 +174,8 @@
         </pre>
     </div>
 
+
+
     <div class="endpoint">
         <h2>Create Admin</h2>
         <p><strong>Endpoint:</strong> <code>POST /api/createAdmin</code></p>
@@ -153,6 +187,23 @@
 {
     "email":"Admin@gmail.com",
     password:"**********"
+
+    
+}
+        </pre>
+    </div>
+
+    <div class="endpoint">
+        <h2>Create Category</h2>
+        <p><strong>Endpoint:</strong> <code>POST /api/createCategory</code></p>
+        <p><strong>Description:</strong> Creates a car category</p>
+        <p><strong>Example Request:</strong></p>
+        <pre>POST http://localhost/fruitionMotors/api/createCategory</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+{
+    "name":"truck",
+   
 
     
 }
