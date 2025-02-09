@@ -10,16 +10,18 @@ $description = $data['description'];
 $image_url=$data["image_url"];
 $price=$data["price"];
 $category=$data["category"];
+$model=$data['model'];
 $brand_name=$data["brand_name"];
-$year=$data["year"];
-$fuel_type=$data["image_url"];
+// $year=$data["year"];
+$fuel_type=$data["fuel_type"];
 $color=$data["color"];
 
 
+if($_SERVER['REQUEST_METHOD']=="POST"){
 // insert admin details
 // remember to hash the user password 
-$insert_sql = "INSERT INTO carlisting (title, description, image_url, price, category, brand_name, year, fuel_type, color) 
-VALUES ('$title', '$description', '$image_url', '$price', '$category', '$brand_name', '$year', '$fuel_type', '$color')";
+$insert_sql = "INSERT INTO carlisting (title, description, image_url, price, category, brand_name, model,  fuel_type, color) 
+VALUES ('$title', '$description', '$image_url', $price, '$category', '$brand_name', '$model',  '$fuel_type', '$color')";
 
 $insert_query=mysqli_query($conn,$insert_sql);
 
@@ -32,10 +34,13 @@ if($insert_query){
 else{
     echo json_encode([
         "status"=>500,
-        "msg"=>"Something went wrong"
+        "msg"=>mysqli_error($conn)
     ]);
+}
 }
 
 
 
+
 ?>
+

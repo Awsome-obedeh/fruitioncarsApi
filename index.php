@@ -69,6 +69,32 @@
         </pre>
     </div>
 
+
+
+    <div class="endpoint">
+        <h2>Get All Cars Listing</h2>
+        <p><strong>Endpoint:</strong> <code>GET /api/carlisting</code></p>
+        <p><strong>Description:</strong> Retrieves a list of all available cars listibg.</p>
+        <p><strong>Example Request:</strong></p>
+        <pre>GET http://localhost/fruitionMotors/api/cars</pre>
+        <p><strong>Example Response:</strong></p>
+        <pre>
+{
+    "status": 200,
+    "cars": [
+        {
+            "id": 1,
+            "title": "Toyota Camry 2022",
+            "price": 25000,
+            "year": 2022,
+            "category": "sedan"
+        },
+        ...
+    ]
+}
+        </pre>
+    </div>
+
     <div class="endpoint">
         <h2>Get Single Car</h2>
         <p><strong>Endpoint:</strong> <code>GET /api/cars?id=1</code></p>
@@ -173,6 +199,35 @@
 }
         </pre>
     </div>
+
+
+
+    <div class="endpoint">
+        <h2>Create CarsListing</h2>
+        <p><strong>Endpoint:</strong> <code>POST /api/createListing</code></p>
+        <p><strong>Description:</strong> Creates a car for listing</p>
+        <p><strong>Example Request:</strong></p>
+        <pre>POST http://localhost/fruitionMotors/api/createCar</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+{
+    "title":"mercedes",
+    "description":"Built to the top.......",
+    "price":2000
+    "image_url":"https:imagelink.jpp",
+    "category":"suv",
+    "brand_name":"mercedes benz",
+    "model":"c300",
+    "year":"2017",
+    "fuel_type":"diesel",
+    "color":"black",
+   
+
+    
+}
+        </pre>
+    </div>
+
 
 
 
