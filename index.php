@@ -25,6 +25,9 @@
             border-left: 5px solid #007bff;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         }
+        .delete {
+            border-left: 5px solid rgb(223, 25, 51) !important;
+        }
 
         code {
             background: #eee;
@@ -261,6 +264,49 @@
    
 
     
+}
+        </pre>
+    </div>
+
+
+    <div class="endpoint">
+        <h2>Update Car</h2>
+        <p><strong>Endpoint:</strong> <code>PUT /api/UpdateCar</code></p>
+        <p><strong>Description:</strong> Updates a car and its details in the database</p>
+        <p><strong>Example Request:</strong></p>
+        <pre>POST http://localhost/fruitionMotors/api/updateCar?id=2</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+{
+    "title":"mercedes",
+    "description":"Built to the top.......",
+    "price":2000
+    "image_url":"https:imagelink.jpp",
+    "category":"suv",
+    "brand_name":"mercedes benz",
+    "model":"c300",
+    "year":"2017",
+    "fuel_type":"diesel",
+    "color":"black",
+    "seat":4,
+    "type_of_gear":"hybrid",
+
+    
+}
+        </pre>
+    </div>
+
+    <div class="endpoint delete">
+        <h2>Delete Car</h2>
+        <p><strong>Endpoint:</strong> <code>DELETE /api/UpdateCar?id=2</code></p>
+        <p><strong>Description:</strong> DELETS a car and its details in the database</p>
+        <p><strong>Example Request:</strong></p>
+        <pre>POST http://localhost/fruitionMotors/api/deleteCar?id=2</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+{
+  "status": "success",
+  "message": "Car deleted successfully"
 }
         </pre>
     </div>
