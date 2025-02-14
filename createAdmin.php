@@ -1,6 +1,7 @@
 <?php
 require "dbConnect.php";
 require "config.php";
+cors();
     // get php post inputs
 $edata = file_get_contents("php://input");
 $data = json_decode($edata, true);
