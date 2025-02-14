@@ -79,7 +79,7 @@
         <p><strong>Endpoint:</strong> <code>GET /api/carlisting</code></p>
         <p><strong>Description:</strong> Retrieves a list of all available cars listibg.</p>
         <p><strong>Example Request:</strong></p>
-        <pre>GET http://localhost/fruitionMotors/api/cars</pre>
+        <pre>GET http://localhost/fruitionMotors/api/carlisting</pre>
         <p><strong>Example Response:</strong></p>
         <pre>
 {
