@@ -1,5 +1,5 @@
 <?php
-$headers = apache_request_headers()
+$headers = apache_request_headers();
     if(isset($headers)){
         // continue
     }
