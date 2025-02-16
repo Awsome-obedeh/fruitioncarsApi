@@ -64,7 +64,8 @@
             "title": "Toyota Camry 2022",
             "price": 25000,
             "year": 2022,
-            "category": "sedan"
+            "category": "sedan",
+           " car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
         },
         ...
     ]
@@ -90,7 +91,8 @@
             "title": "Toyota Camry 2022",
             "price": 25000,
             "year": 2022,
-            "category": "sedan"
+            "category": "sedan",
+            "car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
         },
         ...
     ]
@@ -113,7 +115,8 @@
         "title": "Toyota Camry 2022",
         "price": 25000,
         "year": 2022,
-        "category": "sedan"
+        "category": "sedan",
+        "car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
     }
 }
         </pre>
@@ -135,7 +138,8 @@
             "title": "Honda Accord 2021",
             "price": 22000,
             "year": 2021,
-            "category": "sedan"
+            "category": "sedan",
+            "car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
         },
         ...
     ]
@@ -189,6 +193,7 @@
     "description":"Built to the top.......",
     "price":2000
     "image_url":"https:imagelink.jpp",
+   " car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"],
     "category":"suv",
     "brand_name":"mercedes benz",
     "model":"c300",
@@ -282,6 +287,7 @@
     "description":"Built to the top.......",
     "price":2000
     "image_url":"https:imagelink.jpp",
+    "car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
     "category":"suv",
     "brand_name":"mercedes benz",
     "model":"c300",
