@@ -28,6 +28,10 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
     foreach ($input as $key => $value) {
         if (in_array($key, $allowedFields)) {
+            // / Convert car_gallery array to JSON before updating
+            if ($key === "car_gallery" && is_array($value)) {
+                $value = json_encode($value);
+            }
             $setFields[] = "$key = :$key";
             $params[":$key"] = $value;
         }
