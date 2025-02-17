@@ -6,24 +6,24 @@ cors();
 // jwt
 
 
-use Firebase\JWT\JWT;
-use Firebase\JWT\Key;
+// use Firebase\JWT\JWT;
+// use Firebase\JWT\Key;
 
-$config = jwtSecret();
-$secret_key = $config['jwt_secret'];
+// $config = jwtSecret();
+// $secret_key = $config['jwt_secret'];
 
-//  jwt payload
-function jwt_payload($email, $id)
-{
-    $payload = array(
-        'iss' => $id,
-        'iat' => time(),
-        'exp' => strtotime('+2 days'),
-        'email' => $email
+// //  jwt payload
+// function jwt_payload($email, $id)
+// {
+//     $payload = array(
+//         'iss' => $id,
+//         'iat' => time(),
+//         'exp' => strtotime('+2 days'),
+//         'email' => $email
 
-    );
-    return $payload;
-}
+//     );
+//     return $payload;
+// }
 
 
 
@@ -52,9 +52,9 @@ try {
         $users = mysqli_fetch_assoc($login_query);
 
 
-        $id = $users['id'];
-        $email = $users['email'];
-        $jwt = JWT::encode(jwt_payload($email, $id), $secret_key, 'HS256');
+        // $id = $users['id'];
+        // $email = $users['email'];
+        // $jwt = JWT::encode(jwt_payload($email, $id), $secret_key, 'HS256');
         echo json_encode(array("status" => 200, "msg" => "user logged in successfully", "token" => $jwt));
     } else {
         echo json_encode((array("status" => 400, "msg" => mysqli_error($conn))));
