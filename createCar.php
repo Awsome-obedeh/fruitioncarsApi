@@ -8,7 +8,7 @@ $data = json_decode($edata, true);
 $title = $data['title'];
 $description = $data['description'];
 $image_url=$data["image_url"];
-$car_gallery=$data["image_url"];
+$car_gallery=$data["car_gallery"];
 $price=$data["price"];
 $category=$data["category"];
 $brand_name=$data["brand_name"];
@@ -23,7 +23,7 @@ $color=$data["color"];
 if (!empty($car_gallery)) {
     $value = json_encode($car_gallery);
 }
-$insert_sql = "INSERT INTO carlisting (title, description, image_url, car_gallery, price, category, brand_name, year, fuel_type, color) 
+$insert_sql = "INSERT INTO cars (title, description, image_url, car_gallery, price, category, brand_name, `year`, fuel_type, color) 
 VALUES ('$title', '$description', '$image_url', '$value','$price', '$category', '$brand_name', '$year', '$fuel_type', '$color')";
 
 $insert_query=mysqli_query($conn,$insert_sql);
