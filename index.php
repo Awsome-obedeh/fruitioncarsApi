@@ -161,18 +161,23 @@
   "category": [
     {
       "name": "sedan"
+      image:"https://unsplash/image1.jpg"
     },
     {
       "name": "suv"
+      image:"https://unsplash/image1.jpg"
     },
     {
       "name": "truck"
+      image:"https://unsplash/image1.jpg"
     },
     {
       "name": "convertible"
+      image:"https://unsplash/image1.jpg"
     },
     {
       "name": "lorry"
+      image:"https://unsplash/image1.jpg"
     }
   ]
 }
@@ -265,7 +270,8 @@
         <p><strong>Example Request:</strong></p>
         <pre>
 {
-    "name":"truck",
+    "categoryName":"truck",
+    thumbnail:"https:image/image1.jpg"
    
 
     
@@ -296,6 +302,33 @@
     "color":"black",
     "seat":4,
     "type_of_gear":"hybrid",
+
+    
+}
+        </pre>
+    </div>
+
+
+    <div class="endpoint">
+        <h2>Update Car Listing</h2>
+        <p><strong>Endpoint:</strong> <code>PUT /api/updateListing</code></p>
+        <p><strong>Description:</strong> Updates a car and its details in the database</p>
+        <p><strong>Example Request:</strong></p>
+        <pre>POST https://fruitionmotors.com/api/updateCar?id=2</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+{
+    "title":"mercedes",
+    "description":"Built to the top.......",
+    "price":2000
+    "image_url":"https:imagelink.jpp",
+    "car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
+    "category":"suv",
+    "brand_name":"mercedes benz",
+    "model":"c300",
+    "fuel_type":"diesel",
+    "color":"black",
+   
 
     
 }
