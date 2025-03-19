@@ -15,7 +15,8 @@ $brand_name=$data["brand_name"];
 $year=$data["year"];
 $fuel_type=$data["fuel_type"];
 $color=$data["color"];
-$seat=$data['seat']
+$seat=$data['seat'];
+
 
 
 // insert admin details
@@ -32,13 +33,13 @@ $insert_query=mysqli_query($conn,$insert_sql);
 if($insert_query){
     echo json_encode([
         "status"=>200,
-        "msg"=>"car addded successfully"
+        "msg"=>"car addded successfully";
     ]);
 }
 else{
     echo json_encode([
         "status"=>500,
-        "msg"=>"Something went wrong"
+        "msg"=>"Something went wrong";
     ]);
 }
 
