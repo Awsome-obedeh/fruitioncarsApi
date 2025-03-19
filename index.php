@@ -53,7 +53,7 @@
         <p><strong>Endpoint:</strong> <code>GET /api/cars</code></p>
         <p><strong>Description:</strong> Retrieves a list of all available cars.</p>
         <p><strong>Example Request:</strong></p>
-        <pre>GET https://fruitionmotors.com/api/cars</pre>
+        <pre>GET https://seok-young.online/api/cars</pre>
         <p><strong>Example Response:</strong></p>
         <pre>
 {
@@ -80,7 +80,7 @@
         <p><strong>Endpoint:</strong> <code>GET /api/carlisting</code></p>
         <p><strong>Description:</strong> Retrieves a list of all available cars listibg.</p>
         <p><strong>Example Request:</strong></p>
-        <pre>GET https://fruitionmotors.com/api/carlisting</pre>
+        <pre>GET https://seok-young.online/api/carlisting</pre>
         <p><strong>Example Response:</strong></p>
         <pre>
 {
@@ -105,7 +105,7 @@
         <p><strong>Endpoint:</strong> <code>GET /api/car?id=1</code></p>
         <p><strong>Description:</strong> Fetch details of a single car by ID.</p>
         <p><strong>Example Request:</strong></p>
-        <pre>GET https://fruitionmotors.com/api/cars?id=1</pre>
+        <pre>GET https://seok-young.online/api/cars?id=1</pre>
         <p><strong>Example Response:</strong></p>
         <pre>
 {
@@ -127,7 +127,7 @@
         <p><strong>Endpoint:</strong> <code>GET /api/cars?cat=sedan</code></p>
         <p><strong>Description:</strong> Fetches all cars within a specific category (e.g., sedan, SUV, truck).</p>
         <p><strong>Example Request:</strong></p>
-        <pre>GET https://fruitionmotors.com/api/cars?cat=sedan</pre>
+        <pre>GET https://seok-young.online/api/cars?cat=sedan</pre>
         <p><strong>Example Response:</strong></p>
         <pre>
 {
@@ -153,7 +153,7 @@
         <p><strong>Endpoint:</strong> <code>GET /api/getCategory</code></p>
         <p><strong>Description:</strong> Fetches all category (e.g., sedan, SUV, truck).</p>
         <p><strong>Example Request:</strong></p>
-        <pre>GET https://fruitionmotors.com/api/getCategory</pre>
+        <pre>GET https://seok-young.online/api/getCategory</pre>
         <p><strong>Example Response:</strong></p>
         <pre>
         {
@@ -190,7 +190,7 @@
         <p><strong>Endpoint:</strong> <code>POST /api/createCar</code></p>
         <p><strong>Description:</strong> Creates a car and its details in the database</p>
         <p><strong>Example Request:</strong></p>
-        <pre>POST https://fruitionmotors.com/api/createCar</pre>
+        <pre>POST https://seok-young.online/api/createCar</pre>
         <p><strong>Example Request:</strong></p>
         <pre>
 {
@@ -220,7 +220,7 @@
         <p><strong>Endpoint:</strong> <code>POST /api/createListing</code></p>
         <p><strong>Description:</strong> Creates a car for listing</p>
         <p><strong>Example Request:</strong></p>
-        <pre>POST https://fruitionmotors.com/api/createListing</pre>
+        <pre>POST https://seok-young.online/api/createListing</pre>
         <p><strong>Example Request:</strong></p>
         <pre>
 {
@@ -249,7 +249,7 @@
         <p><strong>Endpoint:</strong> <code>POST /api/createAdmin</code></p>
         <p><strong>Description:</strong> Crates an administartor</p>
         <p><strong>Example Request:</strong></p>
-        <pre>POST https://fruitionmotors.com/api/createAdmin</pre>
+        <pre>POST https://seok-young.online/api/createAdmin</pre>
         <p><strong>Example Request:</strong></p>
         <pre>
 {
@@ -266,7 +266,7 @@
         <p><strong>Endpoint:</strong> <code>POST /api/createCategory</code></p>
         <p><strong>Description:</strong> Creates a car category</p>
         <p><strong>Example Request:</strong></p>
-        <pre>POST https://fruitionmotors.com/api/createCategory</pre>
+        <pre>POST https://seok-young.online/api/createCategory</pre>
         <p><strong>Example Request:</strong></p>
         <pre>
 {
@@ -285,7 +285,7 @@
         <p><strong>Endpoint:</strong> <code>PUT /api/UpdateCar</code></p>
         <p><strong>Description:</strong> Updates a car and its details in the database</p>
         <p><strong>Example Request:</strong></p>
-        <pre>POST https://fruitionmotors.com/api/updateCar?id=2</pre>
+        <pre>POST https://seok-young.online/api/updateCar?id=2</pre>
         <p><strong>Example Request:</strong></p>
         <pre>
 {
@@ -314,7 +314,7 @@
         <p><strong>Endpoint:</strong> <code>PUT /api/updateListing</code></p>
         <p><strong>Description:</strong> Updates a car and its details in the database</p>
         <p><strong>Example Request:</strong></p>
-        <pre>POST https://fruitionmotors.com/api/updateCar?id=2</pre>
+        <pre>POST https://seok-young.online/api/updateCar?id=2</pre>
         <p><strong>Example Request:</strong></p>
         <pre>
 {
@@ -340,7 +340,7 @@
         <p><strong>Endpoint:</strong> <code>DELETE /api/UpdateCar?id=2</code></p>
         <p><strong>Description:</strong> DELETS a car and its details in the database</p>
         <p><strong>Example Request:</strong></p>
-        <pre>POST https://fruitionmotors.com/api/deleteCar?id=2</pre>
+        <pre>POST https://seok-young.online/api/deleteCar?id=2</pre>
         <p><strong>Example Request:</strong></p>
         <pre>
 {

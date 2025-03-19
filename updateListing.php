@@ -41,7 +41,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         http_response_code(400);
         echo json_encode(["error" => "No valid fields provided for update"]);
         exit;
-    }
+    } 
 
     $params[":id"] = $id;
 
