@@ -14,19 +14,20 @@ $car_gallery = isset($data["car_gallery"]) ? json_encode($data["car_gallery"]) :
 $price = $data["price"];
 $category = $data["category"];
 $brand_name = $data["brand_name"];
+$model=$data['model'];
 $year = $data["year"];
 $fuel_type = $data["fuel_type"];
 $color = $data["color"];
 $seat = $data['seat'];
 
 // Use prepared statements to avoid SQL injection
-$insert_sql = "INSERT INTO cars (title, description, image_url, car_gallery, price, category, brand_name, `year`, fuel_type, color, seat) 
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+$insert_sql = "INSERT INTO cars (title, description, image_url, car_gallery, price, category, brand_name, model, `year`, fuel_type, color, seat) 
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = mysqli_prepare($conn, $insert_sql);
 
 if ($stmt) {
-    mysqli_stmt_bind_param($stmt, "sssssssssss", $title, $description, $image_url, $car_gallery, $price, $category, $brand_name, $year, $fuel_type, $color, $seat);
+    mysqli_stmt_bind_param($stmt, "ssssssssssss", $title, $description, $image_url, $car_gallery, $price, $category, $brand_name, $model, $year, $fuel_type, $color, $seat);
     
     if (mysqli_stmt_execute($stmt)) {
         echo json_encode([

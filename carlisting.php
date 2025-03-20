@@ -8,7 +8,7 @@ cors();
 
 
 
-    $get_cars_sql = "SELECT * FROM carlisting ORDER by id DESC LIMIT 12"; // Limit to 12 rows
+    $get_cars_sql = "SELECT * FROM carlisting ORDER by id DESC "; // Limit to 12 rows
 $get_cars_query = mysqli_query($conn, $get_cars_sql);
 
 $cars = []; // Initialize an empty array

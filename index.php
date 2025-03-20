@@ -105,7 +105,7 @@
         <p><strong>Endpoint:</strong> <code>GET /api/car?id=1</code></p>
         <p><strong>Description:</strong> Fetch details of a single car by ID.</p>
         <p><strong>Example Request:</strong></p>
-        <pre>GET https://seok-young.online/api/cars?id=1</pre>
+        <pre>GET https://seok-young.online/api/car?id=1</pre>
         <p><strong>Example Response:</strong></p>
         <pre>
 {
