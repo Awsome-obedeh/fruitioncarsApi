@@ -25,6 +25,7 @@
             border-left: 5px solid #007bff;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .delete {
             border-left: 5px solid rgb(223, 25, 51) !important;
         }
@@ -224,20 +225,24 @@
         <p><strong>Example Request:</strong></p>
         <pre>
 {
-    "title":"mercedes",
-    "description":"Built to the top.......",
-    "price":2000
-    "image_url":"https:imagelink.jpp",
-    "category":"suv",
-    "brand_name":"mercedes benz",
-    "model":"c300",
+    "title":"AUDI",
+    "description":"Built to the TOP CLASS .",
+    "price":"234",
+    "image_url":"https://images.unsplash.com/photo-1462396881884-de2c07cb95ed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fENBUlN8ZW58MHx8MHx8fDA%3D",
+   "car_gallery":["https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fENBUlN8ZW58MHx8MHx8fDA%3D", "https://images.unsplash.com/photo-1541348263662-e068662d82af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fENBUlN8ZW58MHx8MHx8fDA%3D"],
+    "category":"sports",
+    "brand_name":"audi",
+    "model":"g3",
     "year":"2017",
-    "fuel_type":"diesel",
-    "color":"black",
+    "fuel_type":"fuel",
+    "color":"black"
+ 
    
 
     
 }
+   
+
         </pre>
     </div>
 

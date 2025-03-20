@@ -13,15 +13,26 @@ $thumbnail = $data['thumbnail'];
 
 
 
-// insert admin details
-// remember to hash the user password 
-$insert_sql="INSERT INTO category( name,image )
+
+// check if category name already exist
+$check_sql="SELECT name FROM category WHERE name = '$name'";
+$check_query=mysqli_query($conn,$check_sql);
+if(mysqli_num_rows($check_query)> 0){
+    http_response_code(409);
+    echo json_encode([
+
+        "msg"=>"category already exists"
+    ]);
+    exit();
+}
+$insert_sql="INSERT INTO category(name,image)
  VALUES('$name', '$thumbnail')";
 $insert_query=mysqli_query($conn,$insert_sql);
 
 if($insert_query){
+    http_response_code(200);
     echo json_encode([
-        "status"=>200,
+      
         "msg"=>"category addded successfully"
     ]);
 }

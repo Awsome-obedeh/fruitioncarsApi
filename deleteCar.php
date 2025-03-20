@@ -9,7 +9,7 @@ global $pdo; // Ensure $pdo is accessible
 $method = $_SERVER['REQUEST_METHOD'];
 if ($method !== 'DELETE') {
     http_response_code(405);
-    echo json_encode(["error" => "Method Not Allowed"]);
+    echo json_encode(["error" => "Method Not Allowed, Delete Method Allowed"]);
     exit;
 }
 
