@@ -66,7 +66,8 @@
             "price": 25000,
             "year": 2022,
             "category": "sedan",
-           " car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
+           " car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"],
+           "featured":"main"
         },
         ...
     ]
@@ -76,52 +77,8 @@
 
 
 
-    <div class="endpoint">
-        <h2>Get All Cars Listing</h2>
-        <p><strong>Endpoint:</strong> <code>GET /api/carlisting</code></p>
-        <p><strong>Description:</strong> Retrieves a list of all available cars listibg.</p>
-        <p><strong>Example Request:</strong></p>
-        <pre>GET https://seok-young.online/api/carlisting</pre>
-        <p><strong>Example Response:</strong></p>
-        <pre>
-{
-    "status": 200,
-    "cars": [
-        {
-            "id": 1,
-            "title": "Toyota Camry 2022",
-            "price": 25000,
-            "year": 2022,
-            "category": "sedan",
-            "car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
-        },
-        ...
-    ]
-}
-        </pre>
-    </div>
 
-    <div class="endpoint">
-        <h2>Get Single Car</h2>
-        <p><strong>Endpoint:</strong> <code>GET /api/car?id=1</code></p>
-        <p><strong>Description:</strong> Fetch details of a single car by ID.</p>
-        <p><strong>Example Request:</strong></p>
-        <pre>GET https://seok-young.online/api/car?id=1</pre>
-        <p><strong>Example Response:</strong></p>
-        <pre>
-{
-    "status": 200,
-    "car": {
-        "id": 1,
-        "title": "Toyota Camry 2022",
-        "price": 25000,
-        "year": 2022,
-        "category": "sedan",
-        "car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
-    }
-}
-        </pre>
-    </div>
+
 
     <div class="endpoint">
         <h2>Get Cars by Category</h2>
@@ -216,35 +173,6 @@
 
 
 
-    <div class="endpoint">
-        <h2>Create CarsListing</h2>
-        <p><strong>Endpoint:</strong> <code>POST /api/createListing</code></p>
-        <p><strong>Description:</strong> Creates a car for listing</p>
-        <p><strong>Example Request:</strong></p>
-        <pre>POST https://seok-young.online/api/createListing</pre>
-        <p><strong>Example Request:</strong></p>
-        <pre>
-{
-    "title":"AUDI",
-    "description":"Built to the TOP CLASS .",
-    "price":"234",
-    "image_url":"https://images.unsplash.com/photo-1462396881884-de2c07cb95ed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fENBUlN8ZW58MHx8MHx8fDA%3D",
-   "car_gallery":["https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fENBUlN8ZW58MHx8MHx8fDA%3D", "https://images.unsplash.com/photo-1541348263662-e068662d82af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fENBUlN8ZW58MHx8MHx8fDA%3D"],
-    "category":"sports",
-    "brand_name":"audi",
-    "model":"g3",
-    "year":"2017",
-    "fuel_type":"fuel",
-    "color":"black"
- 
-   
-
-    
-}
-   
-
-        </pre>
-    </div>
 
 
 
@@ -286,6 +214,120 @@
 
 
     <div class="endpoint">
+        <h2>Create contact</h2>
+        <p><strong>Endpoint:</strong> <code>POST /api/contact</code></p>
+        <p><strong>Description:</strong> Store User contact</p>
+        <p><strong>Example Request:</strong></p>
+        <pre>POST https://seok-young.online/api/contact</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+        {
+    "fullname":"fruition fruition",
+    "phone":"123344",
+    "message":"tell me something"
+}
+        </pre>
+    </div>
+    <div class="endpoint">
+        <h2>Create sell order</h2>
+        <p><strong>Endpoint:</strong> <code>POST /api/sell</code></p>
+        <p><strong>Description:</strong> Allow a  User sell </p>
+        <p><strong>Example Request:</strong></p>
+        <pre>POST https://seok-young.online/api/sell</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+        {
+    "fullname":"obed chidera",
+    "phone":"123344",
+    "email":"fruition@gmail.com",
+    "make":"toyota",
+    "model":"camry",
+    "year":2012,
+    "transmission":"automatic",
+    "color":"black",
+    "condition":"good",
+    "description":"You will live this car",
+    "location":"port harcourt",
+    "price":"1000000",
+    "images":["https://images.unsplash.com/photo-1587750113469-d2ba02441e8f?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
+
+}
+        </pre>
+    </div>
+
+    
+    <div class="endpoint">
+        <h2>get sell order</h2>
+        <p><strong>Endpoint:</strong> <code>GET /api/sell</code></p>
+        <p><strong>Description:</strong> Allow a  User sell </p>
+        <p><strong>Example Request:</strong></p>
+        <pre>GET https://seok-young.online/api/getSell</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+        {
+    "fullname":"obed chidera",
+    "phone":"123344",
+    "email":"fruition@gmail.com",
+    "make":"toyota",
+    "model":"camry",
+    "year":2012,
+    .....
+
+}
+        </pre>
+    </div>
+    <div class="endpoint">
+        <h2>Create Custom order</h2>
+        <p><strong>Endpoint:</strong> <code>POST /api/customOrder</code></p>
+        <p><strong>Description:</strong> Allow a  create an order </p>
+        <p><strong>Example Request:</strong></p>
+        <pre>POST https://seok-young.online/api/customOrder</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+        {
+    "fullname":"obed chidera",
+    "phone":"123344",
+    "email":"fruition@gmail.com",
+    "make":"toyota",
+    "model":"camry",
+    "year":2012,
+    "transmission":"automatic",
+    "color":"black",
+    "condition":"good",
+    "details":"You will live this car",
+
+   
+
+}
+        </pre>
+    </div>
+
+    
+    <div class="endpoint">
+        <h2>get sell order</h2>
+        <p><strong>Endpoint:</strong> <code>GET /api/getCustom</code></p>
+        <p><strong>Description:</strong> get custom orders </p>
+        <p><strong>Example Request:</strong></p>
+        <pre>GET https://seok-young.online/api/getCustom</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+        {
+    "fullname":"obed chidera",
+    "phone":"123344",
+    "email":"fruition@gmail.com",
+    "make":"toyota",
+    "model":"camry",
+    "year":2012,
+    .....
+
+}
+        </pre>
+    </div>
+
+
+
+
+    <div class="endpoint">
         <h2>Update Car</h2>
         <p><strong>Endpoint:</strong> <code>PUT /api/UpdateCar</code></p>
         <p><strong>Description:</strong> Updates a car and its details in the database</p>
@@ -314,43 +356,33 @@
     </div>
 
 
-    <div class="endpoint">
-        <h2>Update Car Listing</h2>
-        <p><strong>Endpoint:</strong> <code>PUT /api/updateListing</code></p>
-        <p><strong>Description:</strong> Updates a car and its details in the database</p>
-        <p><strong>Example Request:</strong></p>
-        <pre>POST https://seok-young.online/api/updateCar?id=2</pre>
-        <p><strong>Example Request:</strong></p>
-        <pre>
-{
-    "title":"mercedes",
-    "description":"Built to the top.......",
-    "price":2000
-    "image_url":"https:imagelink.jpp",
-    "car_gallery":["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
-    "category":"suv",
-    "brand_name":"mercedes benz",
-    "model":"c300",
-    "fuel_type":"diesel",
-    "color":"black",
-   
 
-    
-}
-        </pre>
-    </div>
 
     <div class="endpoint delete">
         <h2>Delete Car</h2>
         <p><strong>Endpoint:</strong> <code>DELETE /api/UpdateCar?id=2</code></p>
         <p><strong>Description:</strong> DELETS a car and its details in the database</p>
         <p><strong>Example Request:</strong></p>
-        <pre>POST https://seok-young.online/api/deleteCar?id=2</pre>
+        <pre>DELETE https://seok-young.online/api/deleteCar?id=2</pre>
         <p><strong>Example Request:</strong></p>
         <pre>
 {
   "status": "success",
   "message": "Car deleted successfully"
+}
+        </pre>
+    </div>
+    <div class="endpoint delete">
+        <h2>Delete Category</h2>
+        <p><strong>Endpoint:</strong> <code>DELETE /api/deleteCategory?name=sedan</code></p>
+        <p><strong>Description:</strong> DELETS a category</p>
+        <p><strong>Example Request:</strong></p>
+        <pre>DELETE https://seok-young.online/api/deleteCategory?name=suv</pre>
+        <p><strong>Example Request:</strong></p>
+        <pre>
+{
+  "status": "success",
+  "message": "Category deleted successfully"
 }
         </pre>
     </div>

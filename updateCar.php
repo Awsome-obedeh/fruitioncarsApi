@@ -22,7 +22,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     }
 
     // Allowed fields for update
-    $allowedFields = ["title", "description", "price", "image_url","car_gallery","category", "brand_name", "model", "year", "fuel_type", "color", "type_of_gear"];
+    $allowedFields = ["title", "description", "price", "image_url","car_gallery","category", "brand_name", "model", "year", "featured", "fuel_type", "color", "type_of_gear"];
     $setFields = [];
     $params = [];
 
